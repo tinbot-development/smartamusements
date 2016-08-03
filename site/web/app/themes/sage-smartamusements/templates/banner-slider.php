@@ -5,7 +5,7 @@ $images = get_field('header_image_slider');
 
 // check if the repeater field for Slider has rows of data
 if( $images ): ?>
-<section id="galleryCarousel" class="carousel slide gallery-slider" data-ride="carousel">
+<section id="galleryCarousel" class="carousel carousel-fade slide gallery-slider" data-ride="carousel">
   <!-- Indicators -->
   <?php
   //Hide Indicators if only one slide
@@ -38,11 +38,11 @@ if( $images ): ?>
   <?php if(count($images) > 1): ?>
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#galleryCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-play icon-flipped" aria-hidden="true"></span>
+      <span class="icon-arrow arrow-left" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
     </a>
     <a class="right carousel-control" href="#galleryCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+      <span class="icon-arrow arrow-right" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
   <?php endif;?>

@@ -4,17 +4,16 @@ mailhog_install_ssmtp: no
 web_user: vagrant
 
 wordpress_sites:
-  overflow-cafe.dev:
+  smartamusements.dev:
     site_hosts:
-      - overflow-cafe.dev
+      - smartamusements.dev
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
-    repo: git@github.com:tinbot-development/overflowcafe.git
+    repo: git@github.com:tinbot-development/smartamusements.git
     site_install: true
-    site_title: Overflow Cafe
-    db_import: ../site/db/Dump20150909.sql
+    site_title: Smart Amusements
     admin_user: admin
     admin_password: admin
-    admin_email: admin@overflow-cafe.dev
+    admin_email: admin@smartamusements.dev
     multisite:
       enabled: false
       subdomains: false
@@ -25,16 +24,16 @@ wordpress_sites:
       duration: 30s
     system_cron: true
     env:
-      wp_home: http://overflow-cafe.dev
-      wp_siteurl: http://overflow-cafe.dev/wp
+      wp_home: http://smartamusements.dev
+      wp_siteurl: http://smartamusements.dev/wp
       wp_env: development
-      db_name: overflowcafe
-      db_user: overflowcafe
-      db_password: overflowcafe
+      db_name: smartamusements
+      db_user: smartamusements
+      db_password: smartamusements
 
 mail_smtp_server: localhost:1025
-mail_admin: admin@overflow-cafe.dev
-mail_hostname: overflow-cafe.dev
+mail_admin: admin@smartamusements.dev
+mail_hostname: smartamusements.dev
 ssmtp_auth_method: ""
 ssmtp_start_tls: 'no'
 ssmtp_tls: 'no'

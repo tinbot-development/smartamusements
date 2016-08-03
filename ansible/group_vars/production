@@ -31,8 +31,8 @@ wordpress_sites:
       duration: 10s
     system_cron: true
     env:
-      wp_home: http://overflowcafe.vagrant
-      wp_siteurl: http://overflowcafe.vagrant/wp
+      wp_home: http://smartamusements.vagrant
+      wp_siteurl: http://smartamusements.vagrant/wp
       wp_env: production
       db_name: roots_example_project_prod
       db_user: roots_example_project_dbuser

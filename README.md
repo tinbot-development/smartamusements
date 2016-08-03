@@ -111,17 +111,17 @@ $ gulp
 4. Configure ansible/group_vars/development:
 ```
 	wordpress_sites:
-	  overflow-cafe.dev:
+	  smartamusements.dev:
 	    site_hosts:
-	      - overflow-cafe.dev
+	      - smartamusements.dev
 	    local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
-	    repo: git@github.com:tinbot-development/overflowcafe.git
+	    repo: git@github.com:tinbot-development/smartamusements.git
 	    site_install: true
-	    site_title: Overflow Cafe
+	    site_title: Smart Amusements
 	    db_import: ../site/db/Dump20150909.sql
 	    admin_user: admin
 	    admin_password: admin
-	    admin_email: admin@overflow-cafe.dev
+	    admin_email: admin@smartamusements.dev
 	    multisite:
 	      enabled: false
 	      subdomains: false
@@ -132,12 +132,12 @@ $ gulp
 	      duration: 30s
 	    system_cron: true
 	    env:
-	      wp_home: http://overflow-cafe.dev
-	      wp_siteurl: http://overflow-cafe.dev/wp
+	      wp_home: http://smartamusements.dev
+	      wp_siteurl: http://smartamusements.dev/wp
 	      wp_env: development
-	      db_name: overflowcafe
-	      db_user: overflowcafe
-	      db_password: overflowcafe
+	      db_name: smartamusements
+	      db_user: smartamusements
+	      db_password: smartamusements
 ```
 
 4. Run "Run Vagrant up"
