@@ -4,6 +4,9 @@
       <aside class="col-sm-6">
         <a class="brand" href="<?= esc_url(home_url('/')); ?>"><img src="<?php echo IMAGES_URL;?>/bannerlogo.png" alt="<?php bloginfo('name'); ?>" class="banner-logo img-responsive"/></a>
       </aside>
+      <aside class="col-sm-6 sidebar-header">
+        <?php dynamic_sidebar('sidebar-header');?>
+      </aside>
     </div>
   </section>
 

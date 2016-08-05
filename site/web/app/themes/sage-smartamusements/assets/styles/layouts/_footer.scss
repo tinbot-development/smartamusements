@@ -1,0 +1,18 @@
+footer.content-info {
+  background-color: $brand-primary;
+  font-size: 0.9em;
+  .widget {
+    h5 {
+      font-size: 1.3em;
+    }
+    * {
+        color: white;
+    }
+
+    ul.menu {
+      padding: 0;
+      list-style: none;
+    }
+
+  }
+}

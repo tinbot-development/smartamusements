@@ -1,0 +1,23 @@
+.btn {
+    border-radius: 0;
+    border: 0;
+    &.btn-primary {
+        background-color: $brand-primary;
+        color: white;
+        &:hover {
+            background-color: $brand-warning;
+        }
+    }
+    &.btn-arrow-right {
+        display: block;
+        padding: 15px 5px 5px 10px;
+        margin: 5px 0 5px 0;
+        background: url(../images/btn-arrow.png) no-repeat center right #39c;
+        border-right: solid 1px #999;
+        border-bottom: solid 1px #999;
+        text-decoration: none;
+        color: #fff;
+        text-shadow: 1px 1px 1px #222;
+        text-align: left;
+    }
+}

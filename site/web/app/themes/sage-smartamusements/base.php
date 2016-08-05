@@ -21,7 +21,7 @@ use Roots\Sage\Wrapper;
     <div class="wrap container" role="document">
       <div class="content row">
         <?php if (Setup\display_sidebar()) : ?>
-          <aside class="sidebar-secondary">
+          <aside class="sidebar sidebar-secondary">
             <?php include Wrapper\sidebar_secondary_path(); ?>
           </aside><!-- /.sidebar-secondary -->
         <?php endif; ?>

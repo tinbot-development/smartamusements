@@ -1,5 +1,12 @@
 header {
   section.header-top {
-    padding: 1em 0;
+    padding: 5px 0;
+    .sidebar-header {
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
   }
 }
+

@@ -1,1 +1,2 @@
-<?php dynamic_sidebar('sidebar-secondary'); ?>
+<?php
+dynamic_sidebar('sidebar-secondary');
